@@ -1,0 +1,15 @@
+<ion-view view-title="Events" ng-controller="EventCtrl">
+  <ion-content>
+        <button class="button button-stable" ng-click="GetEventFake()">
+            Get Event
+        </button>
+        {{test}}
+        <ion-list>
+          <ion-item ng-repeat="event in eventsTemp" href="#/main/event/{{event.id}}"
+          ng-click="selected_item(event)">
+              {{event.title}} <br>
+              {{event.time}}
+          </ion-item>
+        </ion-list>
+      </ion-content>
+</ion-view>

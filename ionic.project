@@ -1,0 +1,8 @@
+{
+  "name": "Todo",
+  "app_id": "",
+  "serve": {
+    "defaultBrowser": "safari"
+  },
+  "defaultBrowser": "safari"
+}

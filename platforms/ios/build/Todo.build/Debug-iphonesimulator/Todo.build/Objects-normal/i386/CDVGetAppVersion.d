@@ -1,0 +1,26 @@
+dependencies: \
+  /Users/wonderful/ionicApps/Todo/platforms/ios/Todo/Plugins/com.cotabank.Util/CDVGetAppVersion.m \
+  /Users/wonderful/ionicApps/Todo/platforms/ios/build/emulator/include/Cordova/CDV.h \
+  /Users/wonderful/ionicApps/Todo/platforms/ios/build/emulator/include/Cordova/CDVAvailability.h \
+  /Users/wonderful/ionicApps/Todo/platforms/ios/build/emulator/include/Cordova/CDVAvailabilityDeprecated.h \
+  /Users/wonderful/ionicApps/Todo/platforms/ios/build/emulator/include/Cordova/CDVPlugin.h \
+  /Users/wonderful/ionicApps/Todo/platforms/ios/build/emulator/include/Cordova/CDVPluginResult.h \
+  /Users/wonderful/ionicApps/Todo/platforms/ios/build/emulator/include/Cordova/NSMutableArray+QueueAdditions.h \
+  /Users/wonderful/ionicApps/Todo/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegate.h \
+  /Users/wonderful/ionicApps/Todo/platforms/ios/build/emulator/include/Cordova/CDVInvokedUrlCommand.h \
+  /Users/wonderful/ionicApps/Todo/platforms/ios/build/emulator/include/Cordova/CDVViewController.h \
+  /Users/wonderful/ionicApps/Todo/platforms/ios/build/emulator/include/Cordova/CDVCommandQueue.h \
+  /Users/wonderful/ionicApps/Todo/platforms/ios/build/emulator/include/Cordova/CDVWhitelist.h \
+  /Users/wonderful/ionicApps/Todo/platforms/ios/build/emulator/include/Cordova/CDVScreenOrientationDelegate.h \
+  /Users/wonderful/ionicApps/Todo/platforms/ios/build/emulator/include/Cordova/CDVURLProtocol.h \
+  /Users/wonderful/ionicApps/Todo/platforms/ios/build/emulator/include/Cordova/CDVDebug.h \
+  /Users/wonderful/ionicApps/Todo/platforms/ios/build/emulator/include/Cordova/CDVLocalStorage.h \
+  /Users/wonderful/ionicApps/Todo/platforms/ios/build/emulator/include/Cordova/CDVTimer.h \
+  /Users/wonderful/ionicApps/Todo/platforms/ios/build/emulator/include/Cordova/NSArray+Comparisons.h \
+  /Users/wonderful/ionicApps/Todo/platforms/ios/build/emulator/include/Cordova/NSData+Base64.h \
+  /Users/wonderful/ionicApps/Todo/platforms/ios/build/emulator/include/Cordova/NSDictionary+Extensions.h \
+  /Users/wonderful/ionicApps/Todo/platforms/ios/build/emulator/include/Cordova/UIDevice+Extensions.h \
+  /Users/wonderful/ionicApps/Todo/platforms/ios/build/emulator/include/Cordova/CDVJSON.h \
+  /Users/wonderful/ionicApps/Todo/platforms/ios/Todo/Plugins/com.cotabank.Util/CDVGetAppVersion.h \
+  /Users/wonderful/ionicApps/Todo/platforms/ios/Todo/Plugins/com.cotabank.Util/GetAppVersion.h \
+  /Users/wonderful/ionicApps/Todo/platforms/ios/Todo/Plugins/com.cotabank.Util/DataEnc.h
