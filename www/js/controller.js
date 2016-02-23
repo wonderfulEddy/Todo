@@ -56,4 +56,8 @@ angular.module('starter.controllers', [])
 
 .controller("MainCtrl", ['$scope', '$http', function($scope, $http){
 
+}])
+
+.controller("TestCtrl", ['$scope', '$http', function($scope, $http){
+
 }]);
