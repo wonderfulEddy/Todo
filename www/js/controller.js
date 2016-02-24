@@ -1,3 +1,4 @@
+/*123*/
 angular.module('starter.controllers', [])
 
 .controller("EventCtrl", ['$scope', '$http','EventService', function($scope, $http, EventService){
