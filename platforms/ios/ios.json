@@ -47,28 +47,28 @@
     },
     "installed_plugins": {
         "com.cotabank.Util": {
-            "PACKAGE_NAME": "com.ionicframework.todo960391"
+            "PACKAGE_NAME": "com.cotabank.Todo-ionic"
         },
         "com.ionic.keyboard": {
-            "PACKAGE_NAME": "com.ionicframework.todo960391"
+            "PACKAGE_NAME": "com.cotabank.Todo-ionic"
         },
         "cordova-plugin-console": {
-            "PACKAGE_NAME": "com.ionicframework.todo960391"
+            "PACKAGE_NAME": "com.cotabank.Todo-ionic"
         },
         "cordova-plugin-device": {
-            "PACKAGE_NAME": "com.ionicframework.todo960391"
+            "PACKAGE_NAME": "com.cotabank.Todo-ionic"
         },
         "cordova-plugin-splashscreen": {
-            "PACKAGE_NAME": "com.ionicframework.todo960391"
+            "PACKAGE_NAME": "com.cotabank.Todo-ionic"
         },
         "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "com.ionicframework.todo960391"
+            "PACKAGE_NAME": "com.cotabank.Todo-ionic"
         },
         "cordova-sqlite-storage": {
-            "PACKAGE_NAME": "com.ionicframework.todo960391"
+            "PACKAGE_NAME": "com.cotabank.Todo-ionic"
         },
         "me.rahul.plugins.sqlDB": {
-            "PACKAGE_NAME": "com.ionicframework.todo960391"
+            "PACKAGE_NAME": "com.cotabank.Todo-ionic"
         }
     },
     "dependent_plugins": {},

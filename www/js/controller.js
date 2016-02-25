@@ -9,11 +9,11 @@ angular.module('starter.controllers', [])
         {"title":"Title B", "content":"sad", id:2}
     ];
 
-    $scope.GetEventFake = funtion() {
+    /*$scope.GetEventFake = funtion() {
       $http.post("http://192.168.25.180/PushWb/ServiceTest.asmx").
       success(function(response){console.log(response);}).
       error(function(errorMsg){});
-    };
+    };*/
 
     $scope.GetEvent = function() {
         var deferred = $.Deferred();

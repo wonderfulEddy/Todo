@@ -1,3 +1,4 @@
+/*123*/
 angular.module('starter.controllers', [])
 
 .controller("EventCtrl", ['$scope', '$http','EventService', function($scope, $http, EventService){
@@ -7,6 +8,12 @@ angular.module('starter.controllers', [])
         {"title":"Title A", "content":"happy", id:1 },
         {"title":"Title B", "content":"sad", id:2}
     ];
+
+    /*$scope.GetEventFake = funtion() {
+      $http.post("http://192.168.25.180/PushWb/ServiceTest.asmx").
+      success(function(response){console.log(response);}).
+      error(function(errorMsg){});
+    };*/
 
     $scope.GetEvent = function() {
         var deferred = $.Deferred();
@@ -30,6 +37,10 @@ angular.module('starter.controllers', [])
             $scope.events = JSON.parse(response.d).tns;
 
             // Get the selected event information
+            $scope.setEvent = function(testVal) {
+                console.log(testVal);
+                //EventService.selectedEvent = testVal;
+            };
         })
 
     };
@@ -45,5 +56,9 @@ angular.module('starter.controllers', [])
 }])
 
 .controller("MainCtrl", ['$scope', '$http', function($scope, $http){
+
+}])
+
+.controller("TestCtrl", ['$scope', '$http', function($scope, $http){
 
 }]);

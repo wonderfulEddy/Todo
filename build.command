@@ -1,3 +1,4 @@
+killall Xcode
 ionic platform remove ios
 ionic platform add ios
 ionic prepare
