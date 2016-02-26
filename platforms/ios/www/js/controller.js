@@ -1,58 +1,35 @@
-/*123*/
+
 angular.module('starter.controllers', [])
 
-.controller("EventCtrl", ['$scope', '$http','EventService', function($scope, $http, EventService){
-    $scope.events = [];
-    $scope.test ="123123";
+.controller("EventCtrl",function($rootScope, $scope, $ionicPlatform, $http, EventService, getEventService, myFactory){
+    $rootScope.events = [];
     $scope.eventsTemp = [
-        {"title":"Title A", "content":"happy", id:1 },
-        {"title":"Title B", "content":"sad", id:2}
+        {"title":"Title A", "detail":"happy", id:1, "time":"2015/10/10 17:00:00" },
+        {"title":"Title B", "detail":"sad", id:2, "time":"2015/11/10 17:00:00"}
     ];
-
-    /*$scope.GetEventFake = funtion() {
-      $http.post("http://192.168.25.180/PushWb/ServiceTest.asmx").
-      success(function(response){console.log(response);}).
-      error(function(errorMsg){});
-    };*/
-
-    $scope.GetEvent = function() {
-        var deferred = $.Deferred();
-        Util.getToken().then(function(token){
-            var myData = {
-                "accessToken" : token,
-                "from" : "",
-                "to" : ""
-            }
-            var data = JSON.stringify(myData);
-
-            $http.post("https://mobile.cotabank.com.tw/service/TodoWebService.asmx/getEvent",data).
-            success(function(response){deferred.resolve(response);}).
-            error(function(errorMsg){deferred.reject("error:" + errorMsg);});
-
-        });
-
-        var promise = deferred.promise();
-        promise.then(function(response){
-            console.log(JSON.parse(response.d).tns);
-            $scope.events = JSON.parse(response.d).tns;
-
-            // Get the selected event information
-            $scope.setEvent = function(testVal) {
-                console.log(testVal);
-                //EventService.selectedEvent = testVal;
-            };
-        })
-
-    };
 
     $scope.selected_item = function(val) {
         EventService.selectedEvent = val;
     };
 
-}])
+    $ionicPlatform.ready(function() {
+        /*getEventService.getEvent()
+        .then(function(response){
+            $scope.events = JSON.parse(response.d).tns;
+            console.log(JSON.parse(response.d).tns);
+        });*/
+        myFactory()
+        .then(function(response){
+            $rootScope.events = JSON.parse(response.d).tns;
+            console.log(JSON.parse(response.d).tns);
+        });
+    });
 
-.controller("DetailCtrl", ['$scope', '$http','EventService', function($scope, $http, EventService){
+})
+
+.controller("DetailCtrl", ['$rootScope', '$scope', '$http','EventService', function($rootScope, $scope, $http, EventService){
     $scope.event = EventService.selectedEvent;
+    console.log("Your title: "+$rootScope.events[0].title);
 }])
 
 .controller("MainCtrl", ['$scope', '$http', function($scope, $http){
