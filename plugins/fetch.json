@@ -60,7 +60,7 @@
     "com.cotabank.Util": {
         "source": {
             "type": "local",
-            "path": "../com.cotabank.Util"
+            "path": "C:\\Users\\Administrator\\Desktop\\com.cotabank.Util"
         },
         "is_top_level": true,
         "variables": {}

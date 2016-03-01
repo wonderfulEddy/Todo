@@ -1,14 +1,6 @@
 cordova.define('cordova/plugin_list', function(require, exports, module) {
 module.exports = [
     {
-        "file": "plugins/com.cotabank.Util/www/util.js",
-        "id": "com.cotabank.Util.util",
-        "pluginId": "com.cotabank.Util",
-        "clobbers": [
-            "Util"
-        ]
-    },
-    {
         "file": "plugins/com.ionic.keyboard/www/keyboard.js",
         "id": "com.ionic.keyboard.keyboard",
         "pluginId": "com.ionic.keyboard",
@@ -63,19 +55,27 @@ module.exports = [
         "clobbers": [
             "window.plugins.sqlDB"
         ]
+    },
+    {
+        "file": "plugins/com.cotabank.Util/www/util.js",
+        "id": "com.cotabank.Util.util",
+        "pluginId": "com.cotabank.Util",
+        "clobbers": [
+            "Util"
+        ]
     }
 ];
 module.exports.metadata = 
 // TOP OF METADATA
 {
-    "com.cotabank.Util": "1.0.1",
     "com.ionic.keyboard": "1.0.4",
     "cordova-plugin-console": "1.0.2",
     "cordova-plugin-device": "1.1.0",
     "cordova-plugin-splashscreen": "3.0.0",
     "cordova-plugin-whitelist": "1.2.0",
     "cordova-sqlite-storage": "0.7.15-pre",
-    "me.rahul.plugins.sqlDB": "1.0.3"
+    "me.rahul.plugins.sqlDB": "1.0.3",
+    "com.cotabank.Util": "1.0.1"
 }
 // BOTTOM OF METADATA
 });

@@ -7,9 +7,6 @@
         "files": {}
     },
     "installed_plugins": {
-        "com.cotabank.Util": {
-            "PACKAGE_NAME": "com.cotabank.Todo-ionic"
-        },
         "com.ionic.keyboard": {
             "PACKAGE_NAME": "com.cotabank.Todo-ionic"
         },
@@ -30,6 +27,9 @@
         },
         "me.rahul.plugins.sqlDB": {
             "PACKAGE_NAME": "com.cotabank.Todo-ionic"
+        },
+        "com.cotabank.Util": {
+            "PACKAGE_NAME": "com.cotabank.IonicTodoTest"
         }
     },
     "dependent_plugins": {}

@@ -2,7 +2,7 @@
   "name": "Todo",
   "app_id": "",
   "serve": {
-    "defaultBrowser": "safari"
+    "defaultBrowser": "chrome"
   },
-  "defaultBrowser": "safari"
+  "defaultBrowser": "chrome"
 }

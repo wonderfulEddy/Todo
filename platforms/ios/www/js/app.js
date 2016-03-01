@@ -4,7 +4,7 @@
 // the 2nd parameter is an array of 'requires'
 //var todoApp = angular.module('starter', ['ionic', 'ngCordova', 'starter.controllers']);
 angular.module('starter', ['ionic','ngCordova','starter.controllers'])
-.run(function($ionicPlatform, myFactory) {
+.run(function($ionicPlatform, getEventService) {
   $ionicPlatform.ready(function() {
     if(window.cordova && window.cordova.plugins.Keyboard) {
       cordova.plugins.Keyboard.disableScroll(true);
@@ -33,7 +33,7 @@ angular.module('starter', ['ionic','ngCordova','starter.controllers'])
          }
 
       })
-     .state('main.detail', {
+       .state('main.detail', {
            url: '/event/:eventId',
            views: {
              'eventContent' : {
@@ -42,7 +42,7 @@ angular.module('starter', ['ionic','ngCordova','starter.controllers'])
               }
             }
       });
-      $urlRouterProvider.otherwise('/main/event');
+       $urlRouterProvider.otherwise('/main/event');
 })
 
 .service('EventService', function(){
@@ -69,27 +69,4 @@ angular.module('starter', ['ionic','ngCordova','starter.controllers'])
         var promise = deferred.promise();
         return promise;
     };
-}])
-
-.factory('myFactory', function($http){
-    var deferred = $.Deferred();
-    return function() {
-        Util.getToken().then(function(token){
-        var myData = {
-            "accessToken" : token,
-            "from" : "",
-            "to" : ""
-        }
-        var data = JSON.stringify(myData);
-
-        $http.post("https://mobile.cotabank.com.tw/service/TodoWebService.asmx/getEvent",data).
-        success(function(response){deferred.resolve(response);}).
-        error(function(errorMsg){deferred.reject("error:" + errorMsg);});
-
-        });
-
-        var promise = deferred.promise();
-        return promise;
-    };
-
-});
+}]);

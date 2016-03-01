@@ -6,13 +6,11 @@
 	objectVersion = 46;
 	objects = {
 /* Begin PBXBuildFile section */
-		0255F0E61C964FFBB4CF572A /* ProtocolBuffers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C37B6F4722B4116B6E7D4EA /* ProtocolBuffers.framework */; };
 		0FA4899D5F2043448AB9C111 /* sqlDB.h in Sources */ = {isa = PBXBuildFile; fileRef = 7516341E94D84EBCAF89CDA7 /* sqlDB.h */; };
 		130A07EC90D24073998432B5 /* sqlDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 25F346A81FF840EB9C60CF5F /* sqlDB.m */; };
 		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
-		2A47101A296C48CC86D10983 /* libDataEnc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CEC793869B64D6C9E2F3B07 /* libDataEnc.a */; };
 		301BF552109A68D80062928A /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF535109A57CC0062928A /* libCordova.a */; };
 		302D95F114D2391D003F00A1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 302D95EF14D2391D003F00A1 /* MainViewController.m */; };
 		302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 302D95F014D2391D003F00A1 /* MainViewController.xib */; };
@@ -32,7 +30,6 @@
 		30C1856619D5FC0A00212699 /* icon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 30C1856519D5FC0A00212699 /* icon-60@3x.png */; };
 		30FC414916E50CA1004E6F35 /* icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 30FC414816E50CA1004E6F35 /* icon-72@2x.png */; };
 		3D9A780A67A74BD6A81D03B4 /* UIWebViewExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = A0A8D204A7324AECBA6EA6B1 /* UIWebViewExtension.m */; };
-		555E3201D49144FB84F082CC /* libGetAppVersion.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD6ABC061FE248728FE46B89 /* libGetAppVersion.a */; };
 		5B1594DD16A7569C00FEF299 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */; };
 		7430A9C72697436DABDE8BDF /* sqlite3.c in Sources */ = {isa = PBXBuildFile; fileRef = 83A3BDA38DDF4BF997FE6640 /* sqlite3.c */; };
 		7A4B696F241A4437A50C93DA /* CDVViewController+SplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 652729726E134C01AB31785E /* CDVViewController+SplashScreen.m */; };
@@ -51,11 +48,12 @@
 		ABE1838A2288427CAA22E63B /* CDVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = D4391A1599924F4999180A6B /* CDVDevice.m */; };
 		BBAEEFD9E1C848E9B60C350D /* CDVSplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1823EB2CEB4D219EAE7DD4 /* CDVSplashScreen.m */; };
 		D4A0D8761607E02300AEF8BB /* Default-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */; };
-		EA8FDCD91C7E95A900688A83 /* ProtocolBuffers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C37B6F4722B4116B6E7D4EA /* ProtocolBuffers.framework */; };
-		EA8FDCDA1C7E95A900688A83 /* ProtocolBuffers.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4C37B6F4722B4116B6E7D4EA /* ProtocolBuffers.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		EC29F2CF9B174BF89D4F25CE /* CDVGetDeviceId.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C4595FB960418B9269BFA1 /* CDVGetDeviceId.m */; };
 		FA671E884CCC454C84B72E8D /* SQLitePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 40E12AC495B74A34AA94E13C /* SQLitePlugin.m */; };
-		FC308ABDD4EA4A3C8D459B0E /* CDVGetAppVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = FED4444EC6D14F5EA3811D47 /* CDVGetAppVersion.m */; };
+		85D2E2527F5E43578ECA4904 /* CDVGetDeviceId.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B28A0CCCF39414A9BDCF8A8 /* CDVGetDeviceId.m */; };
+		63D0DC5CFE9142888FE63761 /* CDVGetAppVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E38FF965E234AA981F43AFE /* CDVGetAppVersion.m */; };
+		D59B21FDC1EE45728D34A79E /* libDataEnc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B332F9965D034F36BF896DA5 /* libDataEnc.a */; };
+		72741563F790429CB0DBD6CE /* libGetAppVersion.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 978C4DEFBABD44E19930D017 /* libGetAppVersion.a */; };
+		F3E30DBAECD742DC92E5E633 /* ProtocolBuffers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F6B3BA692424A72A9A479E6 /* ProtocolBuffers.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +81,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				EA8FDCDA1C7E95A900688A83 /* ProtocolBuffers.framework in Embed Frameworks */,
+				F3E30DBAECD742DC92E5E633 /* ProtocolBuffers.framework in Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -97,7 +96,6 @@
 		25F346A81FF840EB9C60CF5F /* sqlDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = sqlDB.m; path = me.rahul.plugins.sqlDB/sqlDB.m; sourceTree = "<group>"; };
 		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		29D42E5715C54222B39A2CEE /* CDVGetDeviceId.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDVGetDeviceId.h; path = com.cotabank.Util/CDVGetDeviceId.h; sourceTree = "<group>"; };
 		301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CordovaLib.xcodeproj; path = CordovaLib/CordovaLib.xcodeproj; sourceTree = "<group>"; };
 		301BF56E109A69640062928A /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = SOURCE_ROOT; };
 		302D95EE14D2391D003F00A1 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
@@ -121,15 +119,12 @@
 		32CA4F630368D1EE00C91783 /* Todo-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Todo-Prefix.pch"; sourceTree = "<group>"; };
 		40E12AC495B74A34AA94E13C /* SQLitePlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SQLitePlugin.m; path = "cordova-sqlite-storage/SQLitePlugin.m"; sourceTree = "<group>"; };
 		4599662722254BB386D1BF41 /* CDVLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDVLogger.m; path = "cordova-plugin-console/CDVLogger.m"; sourceTree = "<group>"; };
-		4C37B6F4722B4116B6E7D4EA /* ProtocolBuffers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ProtocolBuffers.framework; path = Todo/Plugins/com.cotabank.Util/ProtocolBuffers.framework; sourceTree = "<group>"; };
 		5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		62573B50BDB349BDB9F616FB /* UIWebViewExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIWebViewExtension.h; path = com.ionic.keyboard/UIWebViewExtension.h; sourceTree = "<group>"; };
 		643C6BB4B5C04843A4EAE16A /* CDVDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDVDevice.h; path = "cordova-plugin-device/CDVDevice.h"; sourceTree = "<group>"; };
 		652729726E134C01AB31785E /* CDVViewController+SplashScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "CDVViewController+SplashScreen.m"; path = "cordova-plugin-splashscreen/CDVViewController+SplashScreen.m"; sourceTree = "<group>"; };
 		6593B757803D496A8C4EE64F /* CDVSplashScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDVSplashScreen.h; path = "cordova-plugin-splashscreen/CDVSplashScreen.h"; sourceTree = "<group>"; };
 		7516341E94D84EBCAF89CDA7 /* sqlDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sqlDB.h; path = me.rahul.plugins.sqlDB/sqlDB.h; sourceTree = "<group>"; };
-		7983340064934B20850DB592 /* DataEnc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataEnc.h; path = com.cotabank.Util/DataEnc.h; sourceTree = "<group>"; };
-		79C4595FB960418B9269BFA1 /* CDVGetDeviceId.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDVGetDeviceId.m; path = com.cotabank.Util/CDVGetDeviceId.m; sourceTree = "<group>"; };
 		7B5B4E443CB64929A24DC521 /* IonicKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IonicKeyboard.h; path = com.ionic.keyboard/IonicKeyboard.h; sourceTree = "<group>"; };
 		7E7966D41810823500FA85AD /* icon-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-40.png"; sourceTree = "<group>"; };
 		7E7966D51810823500FA85AD /* icon-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-40@2x.png"; sourceTree = "<group>"; };
@@ -143,12 +138,8 @@
 		7E7966DD1810823500FA85AD /* icon-small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-small@2x.png"; sourceTree = "<group>"; };
 		83A3BDA38DDF4BF997FE6640 /* sqlite3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = unknown; name = sqlite3.c; path = "cordova-sqlite-storage/sqlite3.c"; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Todo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Todo-Info.plist"; path = "../Todo-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
-		9CEC793869B64D6C9E2F3B07 /* libDataEnc.a */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = archive.ar; name = libDataEnc.a; path = Todo/Plugins/com.cotabank.Util/libDataEnc.a; sourceTree = "<group>"; };
 		A0A8D204A7324AECBA6EA6B1 /* UIWebViewExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIWebViewExtension.m; path = com.ionic.keyboard/UIWebViewExtension.m; sourceTree = "<group>"; };
-		AA88997AF9114EBA8895EBC6 /* GetAppVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GetAppVersion.h; path = com.cotabank.Util/GetAppVersion.h; sourceTree = "<group>"; };
 		B5665F63CF75417BBAA6A70D /* CDVViewController+SplashScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CDVViewController+SplashScreen.h"; path = "cordova-plugin-splashscreen/CDVViewController+SplashScreen.h"; sourceTree = "<group>"; };
-		B5DD93F43B794CD79226DE5C /* CDVGetAppVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDVGetAppVersion.h; path = com.cotabank.Util/CDVGetAppVersion.h; sourceTree = "<group>"; };
-		CD6ABC061FE248728FE46B89 /* libGetAppVersion.a */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = archive.ar; name = libGetAppVersion.a; path = Todo/Plugins/com.cotabank.Util/libGetAppVersion.a; sourceTree = "<group>"; };
 		CF1823EB2CEB4D219EAE7DD4 /* CDVSplashScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDVSplashScreen.m; path = "cordova-plugin-splashscreen/CDVSplashScreen.m"; sourceTree = "<group>"; };
 		D4391A1599924F4999180A6B /* CDVDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDVDevice.m; path = "cordova-plugin-device/CDVDevice.m"; sourceTree = "<group>"; };
 		D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x~iphone.png"; sourceTree = "<group>"; };
@@ -159,7 +150,15 @@
 		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
 		F6C0FC9A2779470ABDA73AEE /* CDVLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDVLogger.h; path = "cordova-plugin-console/CDVLogger.h"; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = Todo/config.xml; sourceTree = "<group>"; };
-		FED4444EC6D14F5EA3811D47 /* CDVGetAppVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDVGetAppVersion.m; path = com.cotabank.Util/CDVGetAppVersion.m; sourceTree = "<group>"; };
+		1B28A0CCCF39414A9BDCF8A8 /* CDVGetDeviceId.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVGetDeviceId.m"; path = "com.cotabank.Util/CDVGetDeviceId.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		4E38FF965E234AA981F43AFE /* CDVGetAppVersion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVGetAppVersion.m"; path = "com.cotabank.Util/CDVGetAppVersion.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		B332F9965D034F36BF896DA5 /* libDataEnc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libDataEnc.a"; path = "Todo/Plugins/com.cotabank.Util/libDataEnc.a"; sourceTree = "<group>"; fileEncoding = 4; };
+		978C4DEFBABD44E19930D017 /* libGetAppVersion.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libGetAppVersion.a"; path = "Todo/Plugins/com.cotabank.Util/libGetAppVersion.a"; sourceTree = "<group>"; fileEncoding = 4; };
+		5A4DBB1DC3F04DE183693C58 /* CDVGetDeviceId.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVGetDeviceId.h"; path = "com.cotabank.Util/CDVGetDeviceId.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		013455BFEB464559A1480C90 /* CDVGetAppVersion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVGetAppVersion.h"; path = "com.cotabank.Util/CDVGetAppVersion.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		F20DF284A8874C31BDCA6D01 /* DataEnc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "DataEnc.h"; path = "com.cotabank.Util/DataEnc.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		6AAABE8514674D23B038C23B /* GetAppVersion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "GetAppVersion.h"; path = "com.cotabank.Util/GetAppVersion.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		8F6B3BA692424A72A9A479E6 /* ProtocolBuffers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "ProtocolBuffers.framework"; path = "Todo/Plugins/com.cotabank.Util/ProtocolBuffers.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,10 +170,10 @@
 				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
 				305D5FD1115AB8F900A74A75 /* MobileCoreServices.framework in Frameworks */,
-				EA8FDCD91C7E95A900688A83 /* ProtocolBuffers.framework in Frameworks */,
-				2A47101A296C48CC86D10983 /* libDataEnc.a in Frameworks */,
-				555E3201D49144FB84F082CC /* libGetAppVersion.a in Frameworks */,
 				0255F0E61C964FFBB4CF572A /* ProtocolBuffers.framework in Frameworks */,
+				D59B21FDC1EE45728D34A79E /* libDataEnc.a in Frameworks */,
+				72741563F790429CB0DBD6CE /* libGetAppVersion.a in Frameworks */,
+				F3E30DBAECD742DC92E5E633 /* ProtocolBuffers.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,9 +246,9 @@
 				5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */,
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
 				305D5FD0115AB8F900A74A75 /* MobileCoreServices.framework */,
-				9CEC793869B64D6C9E2F3B07 /* libDataEnc.a */,
-				CD6ABC061FE248728FE46B89 /* libGetAppVersion.a */,
-				4C37B6F4722B4116B6E7D4EA /* ProtocolBuffers.framework */,
+				B332F9965D034F36BF896DA5 /* libDataEnc.a */,
+				978C4DEFBABD44E19930D017 /* libGetAppVersion.a */,
+				8F6B3BA692424A72A9A479E6 /* ProtocolBuffers.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -265,12 +264,6 @@
 		307C750510C5A3420062BCA9 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
-				79C4595FB960418B9269BFA1 /* CDVGetDeviceId.m */,
-				FED4444EC6D14F5EA3811D47 /* CDVGetAppVersion.m */,
-				29D42E5715C54222B39A2CEE /* CDVGetDeviceId.h */,
-				B5DD93F43B794CD79226DE5C /* CDVGetAppVersion.h */,
-				7983340064934B20850DB592 /* DataEnc.h */,
-				AA88997AF9114EBA8895EBC6 /* GetAppVersion.h */,
 				D639028494BF46069E7ACEB2 /* IonicKeyboard.m */,
 				A0A8D204A7324AECBA6EA6B1 /* UIWebViewExtension.m */,
 				7B5B4E443CB64929A24DC521 /* IonicKeyboard.h */,
@@ -289,6 +282,12 @@
 				1592E47018A64ABDB86ECC12 /* sqlite3.h */,
 				7516341E94D84EBCAF89CDA7 /* sqlDB.h */,
 				25F346A81FF840EB9C60CF5F /* sqlDB.m */,
+				1B28A0CCCF39414A9BDCF8A8 /* CDVGetDeviceId.m */,
+				4E38FF965E234AA981F43AFE /* CDVGetAppVersion.m */,
+				5A4DBB1DC3F04DE183693C58 /* CDVGetDeviceId.h */,
+				013455BFEB464559A1480C90 /* CDVGetAppVersion.h */,
+				F20DF284A8874C31BDCA6D01 /* DataEnc.h */,
+				6AAABE8514674D23B038C23B /* GetAppVersion.h */,
 			);
 			name = Plugins;
 			path = Todo/Plugins;
@@ -474,8 +473,6 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
-				EC29F2CF9B174BF89D4F25CE /* CDVGetDeviceId.m in Sources */,
-				FC308ABDD4EA4A3C8D459B0E /* CDVGetAppVersion.m in Sources */,
 				8C1648D6E6F44499890C02BF /* IonicKeyboard.m in Sources */,
 				3D9A780A67A74BD6A81D03B4 /* UIWebViewExtension.m in Sources */,
 				89E400F951EB4088B2EE4273 /* CDVLogger.m in Sources */,
@@ -486,6 +483,8 @@
 				7430A9C72697436DABDE8BDF /* sqlite3.c in Sources */,
 				0FA4899D5F2043448AB9C111 /* sqlDB.h in Sources */,
 				130A07EC90D24073998432B5 /* sqlDB.m in Sources */,
+				85D2E2527F5E43578ECA4904 /* CDVGetDeviceId.m in Sources */,
+				63D0DC5CFE9142888FE63761 /* CDVGetAppVersion.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,6 +509,7 @@
 					"$(inherited)",
 					Todo/Plugins/com.cotabank.Util,
 					"$(PROJECT_DIR)/Todo/Plugins/com.cotabank.Util",
+					"\"Todo\Plugins\com.cotabank.Util\"",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -552,6 +552,7 @@
 					"$(inherited)",
 					Todo/Plugins/com.cotabank.Util,
 					"$(PROJECT_DIR)/Todo/Plugins/com.cotabank.Util",
+					"\"Todo\Plugins\com.cotabank.Util\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Todo/Todo-Prefix.pch";

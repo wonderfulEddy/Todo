@@ -13,13 +13,13 @@ angular.module('starter.controllers', [])
         EventService.selectedEvent = val;
     };
 
-    $ionicPlatform.ready(function() {
+    /*$ionicPlatform.ready(function() {
         getEventService.getEvent()
         .then(function(response){
             $scope.events = JSON.parse(response.d).tns;
             console.log(JSON.parse(response.d).tns);
         });
-    });
+    });*/
 
 })
 
