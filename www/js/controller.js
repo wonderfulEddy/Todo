@@ -5,7 +5,8 @@ angular.module('starter.controllers', [])
     $scope.events = [];
     $scope.eventsTemp = [
         {"title":"Title A", "detail":"happy", id:1, "time":"2015/10/10 17:00:00" },
-        {"title":"Title B", "detail":"sad", id:2, "time":"2015/11/10 17:00:00"}
+        { "title": "Title B", "detail": "sad", id: 2, "time": "2015/11/10 17:00:00" },
+        { "title": "Title B", "detail": "sad", id: 2, "time": "2015/11/10 17:00:00" }
     ];
 
     $scope.selected_item = function(val) {
