@@ -1,0 +1,15 @@
+<ion-view view-title="Add">
+  <ion-content>
+	<input type="text" style="border:1px solid #ff0000" ng-model="newEvent.title"></input>
+	<textarea type="text" rows="15" style="border:1px solid #ff0000" ng-model="newEvent.detail"></textarea>
+	<label ng-model="event.time"></label>
+	<div>
+	<button class="button button-assertive">
+	  Set Time
+	</button>
+	<div />
+	<button class="button button-balanced" ng-click="submit(newEvent)">
+	  Submit
+	</button>
+  </ion-content>
+</ion-view>

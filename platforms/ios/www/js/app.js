@@ -83,9 +83,9 @@ angular.module('starter', ['ionic','ngCordova','starter.controllers'])
 })
 
 /* Update events */
-.service('UpdateService', function($http){
+.service('UpdateService', function($http, $state){
 	this.updateEvent = function(event) {
-		alert(JSON.stringify(event));
+
 		Util.getToken().then(function(token){
 			var json= {
                 "event_id":event.id,
@@ -103,7 +103,9 @@ angular.module('starter', ['ionic','ngCordova','starter.controllers'])
 			var data = JSON.stringify(json);
 
 			$http.post("https://mobile.cotabank.com.tw/service/TodoWebService.asmx/updateEvent",data)
-			.success(function(){alert("Update Success!!");})
+			.success(function(){
+                $state.go('main.event');
+            })
 			.error(function(errorMsg){alert("error:" + errorMsg);});
 		});
 		

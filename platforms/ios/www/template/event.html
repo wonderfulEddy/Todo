@@ -1,7 +1,7 @@
 <ion-view view-title="Events" ng-controller="EventCtrl">
   <ion-content>
         <ion-list>
-          <ion-item ng-repeat="event in eventsTemp" href="#/main/event/{{event.id}}"
+          <ion-item ng-repeat="event in events" href="#/main/event/{{event.id}}"
           ng-click="selected_item(event)">
               {{event.title}} <br>
               {{event.time}}

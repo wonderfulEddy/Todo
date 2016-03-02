@@ -24,13 +24,13 @@ angular.module('starter.controllers', [])
         EventService.selectedEvent = val;
     };
 
-    $ionicPlatform.ready(function() {
+    /*$ionicPlatform.ready(function() {
         getEventService.getEvent()
         .then(function(response){
             $scope.events = JSON.parse(response.d).tns;
             console.log(JSON.parse(response.d).tns);
         });
-    });
+    });*/
 
 })
 
@@ -50,6 +50,14 @@ angular.module('starter.controllers', [])
 
 }])
 
-.controller("TestCtrl", ['$scope', '$http', function($scope, $http){
-
-}]);
+.controller("AddCtrl", function($scope, $http, InsertService){
+	$scope.newEvent = {
+		title : "",
+		detail : "",
+		time : "2015/03/17 12:00:00"
+	}
+	
+	$scope.submit = function(newEvent) {
+		InsertService.insertEvent(newEvent);
+	}
+});

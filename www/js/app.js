@@ -41,6 +41,15 @@ angular.module('starter', ['ionic','ngCordova','starter.controllers'])
                 controller: 'DetailCtrl'
               }
             }
+      })
+	  .state('main.add', {
+           url: '/event/add',
+           views: {
+             'eventContent' : {
+                templateUrl: "template/add.html",
+                controller: 'AddCtrl'
+              }
+            }
       });
        $urlRouterProvider.otherwise('/main/event');
 })
@@ -83,9 +92,9 @@ angular.module('starter', ['ionic','ngCordova','starter.controllers'])
 })
 
 /* Update events */
-.service('UpdateService', function($http){
+.service('UpdateService', function($http, $state){
 	this.updateEvent = function(event) {
-		alert(JSON.stringify(event));
+
 		Util.getToken().then(function(token){
 			var json= {
                 "event_id":event.id,
@@ -103,13 +112,40 @@ angular.module('starter', ['ionic','ngCordova','starter.controllers'])
 			var data = JSON.stringify(json);
 
 			$http.post("https://mobile.cotabank.com.tw/service/TodoWebService.asmx/updateEvent",data)
-			.success(function(){alert("Update Success!!");})
+			.success(function(){
+                $state.go('main.event');
+            })
+			.error(function(errorMsg){alert("error:" + errorMsg);});
+		});
+		
+	};
+})
+
+/* Insert events */
+.service('InsertService', function($http, $state){
+	this.insertEvent = function(event) {
+
+		Util.getToken().then(function(token){
+			var json= {
+				"accessToken":token,
+                "title":event.title,
+                "detail":event.detail,
+                "time":event.time,
+                "notificationTime":[""],
+                "notificationMessage":[""],
+            }
+
+			var data = JSON.stringify(json);
+
+			$http.post("https://mobile.cotabank.com.tw/service/TodoWebService.asmx/insertEvent",data)
+			.success(function(){
+                $state.go('main.event');
+            })
 			.error(function(errorMsg){alert("error:" + errorMsg);});
 		});
 		
 	};
 });
-
 
 
 
