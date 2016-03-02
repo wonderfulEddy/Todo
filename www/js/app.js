@@ -45,28 +45,104 @@ angular.module('starter', ['ionic','ngCordova','starter.controllers'])
        $urlRouterProvider.otherwise('/main/event');
 })
 
-.service('EventService', function(){
-    this.selectedEvent;
-})
-
+/* Get all the events */
 .service('getEventService', ['$http','$window', function($http, $window){
     var deferred = $.Deferred();
     this.getEvent = function() {
         Util.getToken().then(function(token){
-        var myData = {
-            "accessToken" : token,
-            "from" : "",
-            "to" : ""
-        }
-        var data = JSON.stringify(myData);
+			var myData = {
+				"accessToken" : token,
+				"from" : "",
+				"to" : ""
+			}
+			var data = JSON.stringify(myData);
 
-        $http.post("https://mobile.cotabank.com.tw/service/TodoWebService.asmx/getEvent",data).
-        success(function(response){deferred.resolve(response);}).
-        error(function(errorMsg){deferred.reject("error:" + errorMsg);});
+			$http.post("https://mobile.cotabank.com.tw/service/TodoWebService.asmx/getEvent",data).
+			success(function(response){deferred.resolve(response);}).
+			error(function(errorMsg){deferred.reject("error:" + errorMsg);});
 
         });
 
         var promise = deferred.promise();
         return promise;
     };
-}]);
+}])
+
+/* Get detailed event */
+.service('EventService', function(){
+    this.selectedEvent;
+})
+
+/* Update events fake... */
+.service('UpdateServiceFake', function(){
+	this.updateEvent = function(event) {
+		alert(JSON.stringify(event));
+	}
+    
+	
+})
+
+/* Update events */
+.service('UpdateService', function($http){
+	this.updateEvent = function(event) {
+		alert(JSON.stringify(event));
+		Util.getToken().then(function(token){
+			var json= {
+                "event_id":event.id,
+                "accessToken":token,
+                "title":event.title,
+                "detail":event.detail,
+                "time":event.time,
+                "notificationId":["-1"],
+                "notificationTime":[event.time],
+                "notificationMessage":["none"],
+                "notificationHasBeenEdited":["0"],
+                "deleteNotificationId":["0"]
+            }
+
+			var data = JSON.stringify(json);
+
+			$http.post("https://mobile.cotabank.com.tw/service/TodoWebService.asmx/updateEvent",data)
+			.success(function(){alert("Update Success!!");})
+			.error(function(errorMsg){alert("error:" + errorMsg);});
+		});
+		
+	};
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
