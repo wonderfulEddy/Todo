@@ -1,9 +1,15 @@
 <ion-view view-title="Content">
   <ion-content>
-    <div>
-      <p>{{event.title}}</p>
-      <p>{{event.detail}}</p>
-      <p>{{event.time}}</p>
-    </div>
+	<input type="text" style="border:1px solid #ff0000" value="{{event.title}}" ng-model="event.title"></input>
+	<textarea type="text" rows="15" style="border:1px solid #ff0000" ng-model="event.detail">{{event.detail}}</textarea>
+	<label ng-model="event.time">{{event.time}}</label>
+	<div>
+	<button class="button button-assertive">
+	  Set Time
+	</button>
+	<div />
+	<button class="button button-balanced" ng-click="getUpdatedEvent(event)">
+	  Submit
+	</button>
   </ion-content>
 </ion-view>
