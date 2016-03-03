@@ -56,4 +56,5 @@
   <plugin name="cordova-sqlite-storage" version="0.7.15-pre" />
   <plugin name="me.rahul.plugins.sqlDB" version="1.0.3" />
   <plugin name="com.cotabank.Util" version="1.0.1" src="C:\Users\Administrator\Desktop\com.cotabank.Util" />
+  <plugin name="cordova-plugin-datepicker" version="0.9.2" src="https://github.com/VitaliiBlagodir/cordova-plugin-datepicker.git" />
 </widget>

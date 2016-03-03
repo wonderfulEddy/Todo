@@ -54,6 +54,8 @@
 		D59B21FDC1EE45728D34A79E /* libDataEnc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B332F9965D034F36BF896DA5 /* libDataEnc.a */; };
 		72741563F790429CB0DBD6CE /* libGetAppVersion.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 978C4DEFBABD44E19930D017 /* libGetAppVersion.a */; };
 		F3E30DBAECD742DC92E5E633 /* ProtocolBuffers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F6B3BA692424A72A9A479E6 /* ProtocolBuffers.framework */; };
+		C0168871BC454ADAB6E588A3 /* DatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = A961829B67DE49578AA2F113 /* DatePicker.m */; };
+		AB012396A78F494C98259BC9 /* DatePicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A7B43B3C28244B6B68894FE /* DatePicker.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -159,6 +161,9 @@
 		F20DF284A8874C31BDCA6D01 /* DataEnc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "DataEnc.h"; path = "com.cotabank.Util/DataEnc.h"; sourceTree = "<group>"; fileEncoding = 4; };
 		6AAABE8514674D23B038C23B /* GetAppVersion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "GetAppVersion.h"; path = "com.cotabank.Util/GetAppVersion.h"; sourceTree = "<group>"; fileEncoding = 4; };
 		8F6B3BA692424A72A9A479E6 /* ProtocolBuffers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "ProtocolBuffers.framework"; path = "Todo/Plugins/com.cotabank.Util/ProtocolBuffers.framework"; sourceTree = "<group>"; };
+		A961829B67DE49578AA2F113 /* DatePicker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "DatePicker.m"; path = "cordova-plugin-datepicker/DatePicker.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		FEB1B1117B6644D8A7A1DCE7 /* DatePicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "DatePicker.h"; path = "cordova-plugin-datepicker/DatePicker.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		4A7B43B3C28244B6B68894FE /* DatePicker.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "DatePicker.xib"; path = "DatePicker.xib"; sourceTree = "<group>"; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -235,6 +240,7 @@
 				308D052D1370CCF300D202BF /* icons */,
 				308D05311370CCF300D202BF /* splash */,
 				8D1107310486CEB800E47090 /* Todo-Info.plist */,
+				4A7B43B3C28244B6B68894FE /* DatePicker.xib */,
 			);
 			name = Resources;
 			path = Todo/Resources;
@@ -288,6 +294,8 @@
 				013455BFEB464559A1480C90 /* CDVGetAppVersion.h */,
 				F20DF284A8874C31BDCA6D01 /* DataEnc.h */,
 				6AAABE8514674D23B038C23B /* GetAppVersion.h */,
+				A961829B67DE49578AA2F113 /* DatePicker.m */,
+				FEB1B1117B6644D8A7A1DCE7 /* DatePicker.h */,
 			);
 			name = Plugins;
 			path = Todo/Plugins;
@@ -442,6 +450,7 @@
 				7E7966E11810823500FA85AD /* icon-50@2x.png in Resources */,
 				7E7966E51810823500FA85AD /* icon-76@2x.png in Resources */,
 				30FC414916E50CA1004E6F35 /* icon-72@2x.png in Resources */,
+				AB012396A78F494C98259BC9 /* DatePicker.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,6 +494,7 @@
 				130A07EC90D24073998432B5 /* sqlDB.m in Sources */,
 				85D2E2527F5E43578ECA4904 /* CDVGetDeviceId.m in Sources */,
 				63D0DC5CFE9142888FE63761 /* CDVGetAppVersion.m in Sources */,
+				C0168871BC454ADAB6E588A3 /* DatePicker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

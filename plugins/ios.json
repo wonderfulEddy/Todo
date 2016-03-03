@@ -30,6 +30,9 @@
         },
         "com.cotabank.Util": {
             "PACKAGE_NAME": "com.cotabank.IonicTodoTest"
+        },
+        "cordova-plugin-datepicker": {
+            "PACKAGE_NAME": "com.cotabank.IonicTodoTest"
         }
     },
     "dependent_plugins": {}

@@ -56,8 +56,9 @@ angular.module('starter', ['ionic','ngCordova','starter.controllers'])
 
 /* Get all the events */
 .service('getEventService', ['$http','$window','$q', function($http, $window, $q){
-    /*var deferred = $.Deferred();
     this.getEvent = function() {
+        var deferred = $q.defer();
+        var promised = deferred.promise;
         Util.getToken().then(function(token){
 			var myData = {
 				"accessToken" : token,
@@ -67,28 +68,9 @@ angular.module('starter', ['ionic','ngCordova','starter.controllers'])
 			var data = JSON.stringify(myData);
 
 			$http.post("https://mobile.cotabank.com.tw/service/TodoWebService.asmx/getEvent",data).
-			success(function(response){deferred.resolve(response);}).
-			error(function(errorMsg){deferred.reject("error:" + errorMsg);});
-
-        });
-
-        var promise = deferred.promise();
-        return promise;
-    };*/
-    
-    var deferred = $q.defer();
-    var promised = deferred.promise;
-    this.getEvent = function() {
-        Util.getToken().then(function(token){
-			var myData = {
-				"accessToken" : token,
-				"from" : "",
-				"to" : ""
-			}
-			var data = JSON.stringify(myData);
-
-			$http.post("https://mobile.cotabank.com.tw/service/TodoWebService.asmx/getEvent",data).
-			success(function(response){deferred.resolve(response);}).
+			success(function(response){
+            console.log("service success");
+            deferred.resolve(response);}).
 			error(function(errorMsg){deferred.reject("error:" + errorMsg);});
 
         });
@@ -97,31 +79,6 @@ angular.module('starter', ['ionic','ngCordova','starter.controllers'])
     };
     
 }])
-
-.factory('GetEventFactory', function($http, $window){
-    var factory = {};
-    
-    var deferred = $.Deferred();
-    factory.getEvent = function() {
-        Util.getToken().then(function(token){
-			var myData = {
-				"accessToken" : token,
-				"from" : "",
-				"to" : ""
-			}
-			var data = JSON.stringify(myData);
-			$http.post("https://mobile.cotabank.com.tw/service/TodoWebService.asmx/getEvent",data).
-			success(function(response){deferred.resolve(response);}).
-			error(function(errorMsg){deferred.reject("error:" + errorMsg);});
-
-        });
-
-        var promise = deferred.promise();
-        return promise;
-    };
-    
-    return factory;
-})
 
 /* Get detailed event */
 .service('EventService', function(){

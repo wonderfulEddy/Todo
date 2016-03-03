@@ -39,6 +39,9 @@
     <feature name="AppVersionChecker">
         <param name="ios-package" value="CDVGetAppVersion" />
     </feature>
+    <feature name="DatePicker">
+        <param name="ios-package" value="DatePicker" />
+    </feature>
     <preference name="deployment-target" value="8.2" />
     <icon height="57" src="resources/ios/icon/icon.png" width="57" />
     <icon height="114" src="resources/ios/icon/icon@2x.png" width="114" />

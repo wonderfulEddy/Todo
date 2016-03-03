@@ -63,6 +63,14 @@ module.exports = [
         "clobbers": [
             "Util"
         ]
+    },
+    {
+        "file": "plugins/cordova-plugin-datepicker/www/ios/DatePicker.js",
+        "id": "cordova-plugin-datepicker.DatePicker",
+        "pluginId": "cordova-plugin-datepicker",
+        "clobbers": [
+            "datePicker"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -75,7 +83,8 @@ module.exports.metadata =
     "cordova-plugin-whitelist": "1.2.0",
     "cordova-sqlite-storage": "0.7.15-pre",
     "me.rahul.plugins.sqlDB": "1.0.3",
-    "com.cotabank.Util": "1.0.1"
+    "com.cotabank.Util": "1.0.1",
+    "cordova-plugin-datepicker": "0.9.2"
 }
 // BOTTOM OF METADATA
 });
