@@ -4,13 +4,16 @@
         Add
       </button>
     </ion-nav-buttons>
-  <ion-content>
+    <ion-content>
+    
+        <ion-refresher pulling-text="Pull to refresh" on-refresh="doRefresh()">
+        </ion-refresher>
         <ion-list>
-          <ion-item ng-repeat="event in eventsTemp" href="#/main/event/{{event.id}}"
-          ng-click="selected_item(event)">
+          <ion-item ng-repeat="event in events" class="ng-binding" href="#/main/event/{{event.id}}"
+          ng-click="selected_item(event)" on-hold="showPopup(event)">
               {{event.title}} <br>
               {{event.time}}
           </ion-item>
         </ion-list>
-      </ion-content>
+    </ion-content>
 </ion-view>
