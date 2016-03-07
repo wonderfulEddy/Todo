@@ -18,14 +18,14 @@ angular.module('starter.controllers', [])
         EventService.selectedEvent = val;
     };
     
-    $scope.init = function(){
+    /*$scope.init = function(){
         $ionicPlatform.ready(function() {
                 getEventService.getEvent()
                 .then(function(response){
                     $scope.events = JSON.parse(response.d).tns;
                 });
         });
-    };
+    };*/
 
     $scope.doRefresh = function() {
         

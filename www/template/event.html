@@ -9,7 +9,7 @@
         <ion-refresher pulling-text="Pull to refresh" on-refresh="doRefresh()">
         </ion-refresher>
         <ion-list>
-          <ion-item ng-repeat="event in events" class="ng-binding" href="#/main/event/{{event.id}}"
+          <ion-item ng-repeat="event in eventsTemp" class="ng-binding" href="#/main/event/{{event.id}}"
           ng-click="selected_item(event)" on-hold="showPopup(event)">
               {{event.title}} <br>
               {{event.time}}
