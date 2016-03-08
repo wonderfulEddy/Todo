@@ -1,19 +1,17 @@
-<ion-view view-title="Events" ng-controller="EventCtrl" data-ng-init="init()">
+<ion-view view-title="Events" ng-controller="EventCtrl">
 	<ion-nav-buttons side="right">
       <button class="button" ng-click="doSomething()" menu-toggle="right" ui-sref="main.add">
         Add
       </button>
     </ion-nav-buttons>
     <ion-content>
-    
         <ion-refresher pulling-text="Pull to refresh" on-refresh="doRefresh()">
         </ion-refresher>
         <ion-list>
-          <ion-item ng-repeat="event in eventsTemp" class="ng-binding" href="#/main/event/{{event.id}}"
-          ng-click="selected_item(event)" on-hold="showPopup(event)">
+          <ion-item ng-repeat="event in events" class="ng-binding" href="#/main/event/{{event.id}}"
+          ng-click="selected_item(event)" on-hold="showOptions(event)">
               {{event.title}} <br>
               {{event.time}}
           </ion-item>
-        </ion-list>
-    </ion-content>
+    
 </ion-view>

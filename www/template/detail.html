@@ -2,16 +2,16 @@
   <ion-content>
 	<input type="text" style="border:1px solid #ff0000" value="{{event.title}}" ng-model="event.title"></input>
 	<textarea type="text" rows="15" style="border:1px solid #ff0000" ng-model="event.detail">{{event.detail}}</textarea>
-	<label>{{timeLabel.date}}-{{timeLabel.time}}</label>
 	<div>
-	<button class="button button-assertive" ng-click="setDate()">
-	  Set Date
-	</button>
     
-    <button class="button button-assertive" ng-click="setTime()">
-	  Set Time
+	<button class="button button-outline button-assertive" ng-click="setDate()">
+	  {{timeLabel.date}}
 	</button>
-	<div />
+    <button class="button button-outline button-assertive" ng-click="setTime()">
+	  {{timeLabel.time}}
+	</button>
+	
+    <div />
 	<button class="button button-balanced" ng-click="getUpdatedEvent(event)">
 	  Submit
 	</button>

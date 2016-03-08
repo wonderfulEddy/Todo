@@ -1,5 +1,4 @@
 angular.module('starter.services', [])
-
 /* Get all the events */
 .service('getEventService', ['$http','$window','$q', function($http, $window, $q){
     this.getEvent = function() {
@@ -26,9 +25,35 @@ angular.module('starter.services', [])
     
 }])
 
+/* Events data */
+.service('GetDataService', function(){
+    var events = [];
+    
+    return {
+        getEvent: function() {
+            return events;
+        },
+        
+        setEvent: function(value) {
+            events = value;
+        }
+    };
+})
+
 /* Get detailed event */
 .service('EventService', function(){
-    this.selectedEvent;
+    var selectedEvent;
+    
+    return {
+        getSelectedEvent: function() {
+            return selectedEvent;
+        },
+        
+        setSelectedEvent: function(value) {
+            selectedEvent = value;
+        }
+    };
+    //this.selectedEvent;
 })
 
 /* Update events fake... */
@@ -73,7 +98,7 @@ angular.module('starter.services', [])
 /* Insert events */
 .service('InsertService', function($http, $state){
 	this.insertEvent = function(event) {
-
+    
 		Util.getToken().then(function(token){
 			var json= {
 				"accessToken":token,
@@ -88,7 +113,7 @@ angular.module('starter.services', [])
 
 			$http.post("https://mobile.cotabank.com.tw/service/TodoWebService.asmx/insertEvent",data)
 			.success(function(){
-                $state.go('main.event');
+                $state.go('main.event', null, {reload:true});
             })
 			.error(function(errorMsg){alert("error:" + errorMsg);});
 		});
@@ -98,9 +123,10 @@ angular.module('starter.services', [])
 
 
 /* Delete events */
-.service('DeleteService', function($http, $state){
+.service('DeleteService', function($http, $state, $q){
 	this.deleteEvent = function(event) {
-
+        var deferred = $q.defer();
+        var promised = deferred.promise;
 		Util.getToken().then(function(token){
 			var json = {
                 "event_id":event.id, "accessToken":token
@@ -109,11 +135,12 @@ angular.module('starter.services', [])
 			var data = JSON.stringify(json);
 
 			$http.post("https://mobile.cotabank.com.tw/service/TodoWebService.asmx/deleteEvent",data)
-			.success(function(){
+			.success(function(response){
+                deferred.resolve(response);
                 alert("Delete: " + event.title);
             })
 			.error(function(errorMsg){alert("error:" + JSON.stringify(errorMsg));});
 		});
-		
+		return promised;
 	};
 });
